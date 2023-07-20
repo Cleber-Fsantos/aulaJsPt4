@@ -45,11 +45,11 @@ export function printFibonacci_10(){
 }
 
 // 6. Imprimir números pares de 0 a 20 utilizando o loop while
-export function printParWhile_1_10(){
+export function printParWhile_0_20(){
     let indice = 0;
     while (indice <= 20){
         console.log(`${indice}`)
-        indice++
+        indice+=2
     }
 }
 
@@ -93,7 +93,30 @@ export function facaAteDif0(){
 }
 
 
-
+export function mostrarMenu(){
+    console.log("\n\n#############################################################################################################################")
+    console.log("##                                                                                                                         ##")
+    console.log("##                                                LISTA DE EXERCICIOS                                                      ##")
+    console.log("##                                                                                                                         ##")
+    console.log("#############################################################################################################################")
+    console.log("##                                                                                                                         ##")
+    console.log("##   1. Imprimir números de 1 a 10;                                                                                        ##")
+    console.log("##   2. Imprimir números pares de 1 a 10;                                                                                  ##")
+    console.log("##   3. Faça um programa que imprima os números ímpares de 0 a 50;                                                         ##")
+    console.log("##   4. Tabuada aleatória de 0 a 10;                                                                                       ##")
+    console.log("##   5. Imprimir os primeiros 10 números da sequência de Fibonacci;                                                        ##")
+    console.log("##   6. Imprimir números pares de 0 a 20 utilizando o loop while;                                                          ##")
+    console.log("##   7. Calcular a soma dos números de 1 a 100 utilizando a estrutura while;                                               ##")
+    console.log("##   8. receba a idade do usuário, enquanto < 18 anos continue até > 18;                                                   ##")
+    console.log("##   9. receba um número do usuário e mostre a contagem regressiva até 0;                                                  ##")
+    console.log("##   10. Receba um número do usuário enquanto for diferente de 0;                                                          ##")
+    console.log("##                                                                                                                         ##")
+    console.log("#############################################################################################################################")
+    console.log("##                                                                                                                         ##")
+    console.log("##                                            SAIR. Para sair do Programa                                                  ##")
+    console.log("##                                                                                                                         ##")
+    console.log("#############################################################################################################################\n")
+}   
 
 
 
