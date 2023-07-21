@@ -92,6 +92,37 @@ export function facaAteDif0(){
     console.log(`Parabéns, Você saiu do LOOOP de 0!!!!`)
 }
 
+// 11. Cálculo do IMC
+export function calcImc(){
+    console.log('\nExercicio 011 - CÁLCULO IMC \n');
+
+    let pessoa = {
+        nome : '',
+        peso : '',
+        altura: '',
+    }
+    pessoa.nome  = prompt('Olá, qual o seu nome? ');
+    pessoa.peso  = parseFloat(prompt('Digite o seu peso em kilogramas: '));
+    pessoa.altura  = parseFloat(prompt('Digite a sua altura em metros : '));
+    let IMC = pessoa.peso / (pessoa.altura * pessoa.altura);
+
+    if (IMC  < 18.5 ){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Abaixo do peso`);
+    }else if(IMC  >= 18.5 && IMC < 25){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Peso normal`);
+    }else if(IMC  >= 25 && IMC < 30){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Sobrepeso`);
+    }else if(IMC  >= 30 && IMC < 35){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Obesidade grau 1`);
+    }else if(IMC  >= 35 && IMC < 40){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Obesidade grau 2`);
+    }else if(IMC  >= 40){
+        console.log(`\nOlá ${pessoa.nome} \nIMC => ${IMC.toFixed(2)} - Obesidade grau 3`);
+    }
+
+}
+
+
 
 export function mostrarMenu(){
     console.log("\n\n#############################################################################################################################")
@@ -110,6 +141,7 @@ export function mostrarMenu(){
     console.log("##   8. receba a idade do usuário, enquanto < 18 anos continue até > 18;                                                   ##")
     console.log("##   9. receba um número do usuário e mostre a contagem regressiva até 0;                                                  ##")
     console.log("##   10. Receba um número do usuário enquanto for diferente de 0;                                                          ##")
+    console.log("##   11. Calcular o IMC;                                                                                                   ##")
     console.log("##                                                                                                                         ##")
     console.log("#############################################################################################################################")
     console.log("##                                                                                                                         ##")

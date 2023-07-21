@@ -12,6 +12,7 @@ import {
     confirmarIdade,
     contRegressiva,
     facaAteDif0,
+    calcImc,
     mostrarMenu
 } from './moduloExercicios.js';
 
@@ -51,6 +52,9 @@ do{
             break;
         case '10':
             facaAteDif0();
+            break;
+        case '11':
+            calcImc();
             break;
         case 'sair':
             console.log('\nObrigado por utilziador nosso gerador de exercícios :) Volte Sempre !!!\n');
